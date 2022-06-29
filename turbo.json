@@ -1,5 +1,6 @@
 {
-  "npmClient": "npm",
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/master",
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],

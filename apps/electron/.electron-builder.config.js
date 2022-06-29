@@ -14,7 +14,13 @@ const config = {
     output: "dist",
     buildResources: "buildResources",
   },
-  files: ["layers/**/dist/**"],
+  files: [
+    "layers/**/dist/**",
+    "!node_modules/electron-updater",
+    "!node_modules/web/*",
+    "!node_modules/web/node_modules/*",
+    "node_modules/web/dist",
+  ],
   extraMetadata: {
     version: process.env.VITE_APP_VERSION,
   },
