@@ -1,0 +1,5 @@
+packages:
+  - apps/electron
+  - apps/web
+  - packages/config
+  - packages/tsconfig
